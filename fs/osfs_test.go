@@ -1,4 +1,4 @@
-// Copyright (c) NOXIDE.LOL
+// Copyright (c) CattleCloud LLC
 // SPDX-License-Identifier: BSD-3-Clause
 
 package fs

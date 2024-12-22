@@ -1,23 +1,17 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+*~
+~*
 
-# Test binary, built with `go test -c`
-*.test
+# OS files
+**/.DS_Store
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Build artifacts
+site
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go work files
+# Go workspace file
 go.work
 go.work.sum
 
-# macOS
-.DS_Store
+# Local source and binary files
+.src/
+.bin/
 

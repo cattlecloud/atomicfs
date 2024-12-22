@@ -1,4 +1,4 @@
-// Copyright (c) NOXIDE.LOL
+// Copyright (c) CattleCloud LLC
 // SPDX-License-Identifier: BSD-3-Clause
 
 package atomicfs
@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
+	"cattlecloud.net/go/atomicfs/fs"
+	"cattlecloud.net/go/atomicfs/sys"
 	"github.com/shoenig/test/must"
-	"noxide.lol/go/atomicfs/fs"
-	"noxide.lol/go/atomicfs/sys"
 )
 
 func TestFileWriter_WriteFile(t *testing.T) {
