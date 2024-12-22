@@ -1,6 +1,6 @@
-module noxide.lol/go/atomicfs
+module cattlecloud.net/go/atomicfs
 
-go 1.21
+go 1.23
 
 require github.com/shoenig/test v1.7.0
 

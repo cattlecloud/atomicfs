@@ -1,4 +1,4 @@
-// Copyright (c) NOXIDE.LOL
+// Copyright (c) CattleCloud LLC
 // SPDX-License-Identifier: BSD-3-Clause
 
 // Package atomicfs provides tools for doing all-or-nothing atomic filesystem
@@ -14,8 +14,8 @@ import (
 	"strings"
 	"syscall"
 
-	"noxide.lol/go/atomicfs/fs"
-	"noxide.lol/go/atomicfs/sys"
+	"cattlecloud.net/go/atomicfs/fs"
+	"cattlecloud.net/go/atomicfs/sys"
 )
 
 // A FileWriter is used to read content from a source and write it to a
