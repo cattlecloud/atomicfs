@@ -13,10 +13,16 @@ default:
 tidy:
     go mod tidy
 
-# run tests across source tree
+# run specific unit test
 [group('build')]
-test:
-    go test -v -race -count=1 ./...
+[no-cd]
+test unit:
+    go test -v -count=1 -race -run {{unit}} 2>/dev/null
+
+# run all tests across source tree
+[group('build')]
+tests:
+    go test -count=1 -race ./... 2>/dev/null
 
 # ensure copywrite headers present on source files
 [group('lint')]
@@ -43,5 +49,5 @@ lint: vet
 # locally install build dependencies
 [group('build')]
 init:
-    go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.62.2
+    go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.8.0
 
