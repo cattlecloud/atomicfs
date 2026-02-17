@@ -24,13 +24,6 @@ test unit:
 tests:
     go test -count=1 -race ./... 2>/dev/null
 
-# ensure copywrite headers present on source files
-[group('lint')]
-copywrite:
-    copywrite \
-        --config {{scripts}}/copywrite.hcl headers \
-        --spdx "BSD-3-Clause"
-
 # apply go vet command on source tree
 [group('lint')]
 vet:
