@@ -9,7 +9,7 @@ A library for atomic filesystem operations in Go.
 
 # Overview
 
-The `cattlecloud.net/go/atomicfs` module provides a package for performing atomic
+The `cattlecloud.net/go/atomicfs/v2` module provides a package for performing atomic
 filesystem operations.
 
 #### Reading material
@@ -25,18 +25,22 @@ go get cattlecloud.net/go/atomicfs@latest
 ```
 
 ```go
-import "cattlecloud.net/go/atomicfs"
+import "cattlecloud.net/go/atomicfs/v2"
 ```
 
 #### Examples
 
-```go
-writer := atomicfs.NewFileWriter(atomicfs.Options{
-    TmpDirectory: "/tmp",
-    Mode:         0600,
-})
+Written files default to mode `0660` (read-write for the owner and group).
+Pass `atomicfs.WithMode` to override it:
 
-_ = writer.Write(input, output)
+```go
+writer := atomicfs.New(
+    atomicfs.WithTempDir("/tmp"),
+    atomicfs.WithMode(0600), // custom file mode
+)
+
+input := strings.NewReader("hello, world")
+_ = writer.WriteFile("/path/to/output.txt", input)
 ```
 
 # Contributing

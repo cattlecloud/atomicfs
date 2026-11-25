@@ -1,6 +1,6 @@
-module cattlecloud.net/go/atomicfs
+module cattlecloud.net/go/atomicfs/v2
 
-go 1.26
+go 1.27
 
 require github.com/shoenig/test v1.13.2
 
