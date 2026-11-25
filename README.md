@@ -9,8 +9,8 @@ A library for atomic filesystem operations in Go.
 
 # Overview
 
-The `cattlecloud.net/go/atomicfs/v2` module provides a package for performing atomic
-filesystem operations.
+The `cattlecloud.net/go/atomicfs/v2` module provides a package for performing
+atomic filesystem operations.
 
 #### Reading material
 
@@ -21,7 +21,7 @@ filesystem operations.
 The `atomicfs` package can be added to a project with `go get`.
 
 ```shell
-go get cattlecloud.net/go/atomicfs@latest
+go get cattlecloud.net/go/atomicfs/v2@latest
 ```
 
 ```go
@@ -45,11 +45,11 @@ _ = writer.WriteFile("/path/to/output.txt", input)
 
 # Contributing
 
-The `cattlecloud.net/go/atomicfs` module is always improving with new features and
-error corrections. For contributing bug fixes and new features please file an
-issue.
+The `cattlecloud.net/go/atomicfs/v2` module is always improving with new
+features and error corrections. For contributing bug fixes and new features
+please file an issue.
 
 # License
 
-The `cattlecloud.net/go/atomicfs` module is open source under the [BSD-3-Clause](LICENSE)
-license.
+The `cattlecloud.net/go/atomicfs/v2` module is open source under the
+[BSD-3-Clause](LICENSE) license.
